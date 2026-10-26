@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>internet</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main id="main">
+      <div id="about" class="blocks">
+        <h1>About me!</h1>
+        My name is ⭑Alicia⭑ and Im 4teen
+        <img src="heart.gif" style="width: 14px;">
+      </div>
+      <div id="favs" class="blocks">
+        <h1>My favorite thingz &lt3</h1>
+        <ul>
+          <li>My mom XD </li>
+          <li>My dog Chica, she is a golden lab and I luv her</li>
+        </ul>
+      </div>
+      <div class="blocks">
+        <h1>My interests</h1>
+      </div>
+      <div class="blocks">
+        <div class="jukebox">
+        <img src="heart.gif">
+        <ul>
+          <button onclick="stopmusic()" >stop music</button>
+
+          <li><h3 id="ice" class="musicpick">Ice Ice Baby by Vanilla Ice</h1>
+          <audio> <source src="10 - Vanilla Ice - Ice Ice Baby (Revised Edition).mp3" type="audio/mp3"> </audio>
+          </li>
+
+          <li><h3 id="girlfriend" class="musicpick">Girlfriend by Avril Lavigne</h3>
+          <audio> <source src="Avril Lavigne - Girlfriend (Official Video).mp3" type="audio/mp3"> </audio></li>
+
+          <li><h3 id="rebel" class="musicpick">Rebel Woman by DNA</h3>
+          <audio> <source src="14 - DNA - Rebel Woman.mp3" type="audio/mp3"> </audio></li>
+        </ul>
+
+        <marquee > 
+          <p id="marq">select a song!</p>
+        </marquee>
+  
+      <script>
+        var y = document.getElementsByTagName('audio');
+        for(var j=0; j<y.length; j++) {
+          y[j].onended = function() {
+          document.getElementById('marq').innerHTML = 'select a song!';};}
+      </script>    
+      </div> 
+      </div>
+    </main>
+  </body>
+  <script src="animation.js"></script>
+</html>

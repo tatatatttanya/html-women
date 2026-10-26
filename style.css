@@ -1,0 +1,72 @@
+*{
+    user-select: none;
+    -webkit-user-drag: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@font-face {
+    font-family: 'Barbie';
+    src: url('Barbie.otf');
+}
+
+body {
+    background-color: deeppink;
+    background-image: url(bg\ barbie.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-family: "Barbie";
+}
+p{
+    margin:0;
+    margin-left: 1pt;
+    margin-bottom: 3pt;
+    font-size: medium;
+}
+
+main {
+    overflow: scroll;
+    width: auto;
+    height: 600px;
+    border-style: solid;
+    border-color: #FFC7E5;
+    border-width: 1px;
+    padding: 10px;
+    display: block;
+}
+
+.blocks {
+    border: 2px solid;
+    width: auto;
+    overflow: auto;
+    height: auto;
+    box-shadow: 1px 2px 10px #FFC7E5 inset;
+    padding: 10px;
+    float: left;
+    z-index: 22;
+    border: 20px solid transparent;
+    margin: 10px;
+    border-color:darkviolet;
+    background-color: #FFC7E5;
+    border-image: url("pinklace.png") 34 round;
+}
+
+ul {
+    list-style-image: url('heartmarker.gif');
+}
+
+.jukebox {
+    position: relative;
+    width: 400px;}
+.jukebox ul {
+  display: inline-block;}
+.jukebox:hover ul, .activate:focus + ul, .jukebox:focus-within > ul {
+  display: inline-block;}
+
+.musicpick {
+    text-decoration: underline;
+}
+.musicpick:hover {
+    cursor: pointer;
+}
